@@ -13,6 +13,8 @@ module.exports = {
       fontFamily: {
         'sans': ['Inter', 'sans-serif'],
         'serif': ['Merriweather', 'serif'],
+        'pacifico': ['Pacifico', 'cursive'],
+        'montserrat': ['Montserrat', 'sans-serif'],
       },
       fontSize: {
         'xs': '.75rem',
@@ -25,6 +27,7 @@ module.exports = {
         '4xl': '2.25rem',
         '5xl': '3rem',
         '6xl': '4rem',
+        'logo-size' : '2.1875rem'
       },
     },
   },

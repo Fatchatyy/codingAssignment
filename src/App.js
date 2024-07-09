@@ -7,6 +7,7 @@ function App() {
     //bg-white-900  min-h-screen"
     <div className="">
       <Navbar/>
+      
     </div>
   );
 }
