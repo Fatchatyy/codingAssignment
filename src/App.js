@@ -9,7 +9,7 @@ import BackgroundAndPage from './components/BackgroundAndPage';
 function App() {
   return (
     <Router>
-    <div className="bg-navbar">
+    <div className="lg:bg-navbar bg-navbar">
    {/* <Navbar/>
     <div className=" relative  mt-9 ">
     

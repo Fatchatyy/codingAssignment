@@ -8,7 +8,7 @@ const BackgroundAndPage = () => {
 
 <div >
    <Navbar/>
-    <div className=" relative  mt-9 ">
+    <div className=" lg:bg-navbar bg-navbar relative  mt-9 ">
     {/* Background Component */}
   <BackgroundComponent/>
 
