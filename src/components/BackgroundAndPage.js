@@ -4,21 +4,19 @@ import BackgroundComponent from './BackgroundComponent';
 
 import PageComponent from './pageComponent';
 const BackgroundAndPage = () => {
-  return (
+    return (
+        <div >
+            <Navbar />
+            <div className=" lg:bg-navbar bg-navbar relative  mt-9 ">
+                {/* Background Component */}
+                <BackgroundComponent />
 
-<div >
-   <Navbar/>
-    <div className=" lg:bg-navbar bg-navbar relative  mt-9 ">
-    {/* Background Component */}
-  <BackgroundComponent/>
-
-    {/* Page Component */}
-    <div className="absolute inset-0 flex justify-center items-center">
-      <PageComponent />
-    </div>
-  </div>
-     </div>
-
-  );
+                {/* Page Component */}
+                <div className="absolute inset-0 flex justify-center items-center">
+                    <PageComponent />
+                </div>
+            </div>
+        </div>
+    );
 };
 export default BackgroundAndPage;

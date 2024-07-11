@@ -35,6 +35,7 @@ module.exports = {
         '6xl': '4rem',
         'logo-size' : '2.1875rem'
       },
+      
 
     },
   },

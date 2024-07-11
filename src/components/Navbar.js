@@ -32,7 +32,7 @@ function Navbar() {
             <li><a href="#" className="hover:text-purchase-button text-navlink text-lg lg:text-xl font-montserrat">Account <FontAwesomeIcon icon={faCaretDown} /></a></li>
             <li><a href="#" className="hover:text-purchase-button text-navlink text-lg lg:text-xl font-montserrat">Products <FontAwesomeIcon icon={faCaretDown} /></a></li>
           </ul>
-          <button className="bg-purchase-button px-4 py-2 rounded-xl text-purchase-text font-montserrat font-bold text-lg lg:text-xl mt-4 lg:mt-0">Purchase Now</button>
+          <button className="bg-purchase-button hover:bg-blue-600 px-4 py-2 rounded-xl text-purchase-text font-montserrat font-bold text-lg lg:text-xl mt-4 lg:mt-0">Purchase Now</button>
         </div>
       </div>
     </nav>
