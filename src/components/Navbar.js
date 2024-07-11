@@ -25,30 +25,56 @@ function Navbar() {
     </div>
   </div>
 </nav>
-//  <nav className="bg-navbar py-6">
-//       <div className="container mx-auto flex justify-between ">
-//         {/* Logo with half-circle */}
-//         <div className="relative flex">
-//           <div className="relative z-10 text-2xl font-bold text-logo">SaasTribe</div>
-//           <div className="absolute -bottom-2 left-0 right-0 flex justify-center">
-//             <div className="w-16 h-8 bg-blue-500 rounded-b-full"></div>
-//           </div>
-//         </div>
-
-//         {/* Navigation Links */}
-//         <div className="flex items-center space-x-12">
-//           <ul className="flex space-x-12">
-//             <li><a href="#" className="hover:text-purchase-button text-navlink">Home</a></li>
-//             <li><a href="#" className="hover:text-purchase-button text-navlink">Company</a></li>
-//             <li><a href="#" className="hover:text-purchase-button text-navlink">Account</a></li>
-//             <li><a href="#" className="hover:text-purchase-button text-navlink">Products</a></li>
-//           </ul>
-//           <button className="bg-purchase-button px-4 py-2 rounded text-purchase-text">Purchase Now</button>
-//         </div>
-//       </div>
-//     </nav> 
-
   );
 }
 
 export default Navbar;
+{/* <div className="flex justify-between p-8">
+
+<div className="w-5/12">
+  <h1 className="text-2xl font-bold mb-4">Title</h1>
+  <p className="mb-4">This is the description for the first section. It provides an overview or additional information.</p>
+  <div className="flex space-x-4">
+    <button className="bg-blue-500 text-white px-4 py-2 rounded">Button 1</button>
+    <button className="bg-blue-500 text-white px-4 py-2 rounded">Button 2</button>
+  </div>
+</div>
+
+
+<div className="w-7/12 relative p-12">
+  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-blue-500 h-16 w-3/4"></div>
+  <div className="grid grid-cols-3 gap-2 relative z-10 justify-around">
+    {[
+      {
+        title: "Accounts",
+        description: "Manage an unlimited number of accounts from one place."
+      },
+      {
+        title: "Roles and Permissions",
+        description: "Full control with flexible user permissions for views and actions."
+      },
+      {
+        title: "Integration",
+        description: "Connect the tools you already use."
+      },
+      {
+        title: "Chat Bots",
+        description: "AI-powered chatbots to improve your business and customer satisfaction."
+      },
+      {
+        title: "In-App Messaging",
+        description: "Build a better business with provocative messages."
+      },
+      {
+        title: "Knowledge Base",
+        description: "Create and publish answers for customers."
+      }
+    ].map((card, index) => (
+      <div key={index} className="bg-white shadow-md rounded-lg p-4 w-40">
+        <h2 className="text-lg font-bold mb-2">{card.title}</h2>
+        <p className="text-sm">{card.description}</p>
+      </div>
+    ))}
+  </div>
+</div>
+</div> */}

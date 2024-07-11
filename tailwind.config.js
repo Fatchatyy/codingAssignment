@@ -8,7 +8,10 @@ module.exports = {
         'purchase-button': '#377dff',
         'navlink': '#aebad1',
         'logo': '#fafafa',
+        'card': '#282b2f',
         'purchase-text': '#ffffff',
+        'p':'#ccdaf5',
+        'contour':'#2c5297',
       },
       fontFamily: {
         'sans': ['Inter', 'sans-serif'],
@@ -25,6 +28,7 @@ module.exports = {
         '2xl': '1.5rem',
         '3xl': '1.875rem',
         '4xl': '2.25rem',
+        'Title': '2.5rem',
         '5xl': '3rem',
         '6xl': '4rem',
         'logo-size' : '2.1875rem'
