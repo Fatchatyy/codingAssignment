@@ -19,22 +19,3 @@ const BackgroundComponent = () => {
 
 export default BackgroundComponent;
 
-// import React from 'react';
-
-// const BackgroundComponent = () => {
-//   return (
-//     <div className=" container mx-auto flex flex-col w-full h-80 bg-navbar justify-start gap-24 ">
-//       {/* Long rectangle */}
-//       <div className="flex h-20 mt-9"> 
-//         <div className="w-full bg-purchase-button rounded-bl-full rounded-tr-full"></div>
-//       </div>
-
-//       {/* Short rectangle */}
-//       <div className="flex justify-end h-20">
-//         <div className="w-2/3 md:w-3/5 bg-purchase-button rounded-bl-full rounded-br-full"></div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default BackgroundComponent;

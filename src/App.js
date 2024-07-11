@@ -10,17 +10,6 @@ function App() {
   return (
     <Router>
     <div className="lg:bg-navbar bg-navbar">
-   {/* <Navbar/>
-    <div className=" relative  mt-9 ">
-    
-    <BackgroundComponent />
-
-    
-    <div className="absolute inset-0 flex justify-center items-center">
-      <PageComponent />
-    </div>
-  </div> */}
-  {/* Routes */}
   <Routes>
   <Route path="/" element={<BackgroundAndPage/>} />
             <Route path="/data" element={<ConsumeEndPoint/>} /> {/* Route for DataDisplay */}
