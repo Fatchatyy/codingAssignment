@@ -4,7 +4,8 @@ Follow these steps to run the app:
 3) Start the app : npm start
 
 More info:
--I used Photopea to extract the fonts, colors, and sizes for the design.
--The application is responsive, ensuring a seamless experience across different screen sizes.
--Implemented pagination to display data fetched from the endpoint, preventing long scrolling and cluttered information.
--Sorting and Searching: Added features to sort columns alphabetically and search by name to manage the large amount of data effectively.
+1)The data fetched from the endpoint was very big so I implemented pagination to prevent long scrolling. 
+2)I added features to sort columns alphabetically and search by name to manage the large amount of data effectively.
+2)I used Photopea to extract the fonts, colors, and sizes from the template.
+3)I ensured the app to be responsive to ensure a seamless experience across different screen sizes.
+
