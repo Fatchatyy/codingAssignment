@@ -20,6 +20,7 @@ module.exports = {
         'serif': ['Merriweather', 'serif'],
         'pacifico': ['Pacifico', 'cursive'],
         'montserrat': ['Montserrat', 'sans-serif'],
+        'poppins':['Poppins', 'sans-serif'],
       },
       fontSize: {
         'xs': '.75rem',

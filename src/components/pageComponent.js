@@ -17,7 +17,7 @@ const PageComponent = () => {
       <div className="lg:w-2/5  relative order-1 lg:order-1 h-full flex ">
 
         {/* Content of the first column */}
-        <p className="text-lg text-welcome ml-20 pl-2 lg:mt-12 mt-3  ">Welcome </p>
+        <p className="text-lg font-montserrat font-semibold text-welcome ml-20 pl-2 lg:mt-12 mt-3  ">Welcome </p>
         <div className="absolute inset-0 flex flex-col lg:top-20 top-10  left-20 text-white ">
 
           <h2 className="font-bold z-10 relative leading-tight text-Title font-montserrat ">Ready to help you in your projects!</h2>

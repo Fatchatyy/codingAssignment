@@ -37,7 +37,7 @@ const ConsumeEndPoint = () => {
 
     const offset = currentPage * itemsPerPage;
     const filteredData = data.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
-    //const currentPageData = filteredData.slice(offset, offset + itemsPerPage);
+ 
     const pageCount = Math.ceil(filteredData.length / itemsPerPage);
 
     const requestSort = (key) => {
