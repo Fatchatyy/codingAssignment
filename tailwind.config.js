@@ -12,6 +12,8 @@ module.exports = {
         'purchase-text': '#ffffff',
         'p':'#ccdaf5',
         'contour':'#2c5297',
+        'welcome':'#4579f5',
+        'icon':'#2b2f37',
       },
       fontFamily: {
         'sans': ['Inter', 'sans-serif'],
