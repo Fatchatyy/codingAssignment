@@ -6,6 +6,7 @@ const ConsumeEndPoint = () => {
     const [currentPage, setCurrentPage] = useState(0);
     const [itemsPerPage] = useState(10);
     const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
+    const [searchTerm, setSearchTerm] = useState('');
 
     const fetchData = async () => {
         try {
@@ -29,9 +30,15 @@ const ConsumeEndPoint = () => {
         setCurrentPage(event.selected);
     };
 
+    const handleSearchChange = (event) => {
+        setSearchTerm(event.target.value);
+        setCurrentPage(0); // Reset to the first page on search
+    };
+
     const offset = currentPage * itemsPerPage;
-    const currentPageData = data.slice(offset, offset + itemsPerPage);
-    const pageCount = Math.ceil(data.length / itemsPerPage);
+    const filteredData = data.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    //const currentPageData = filteredData.slice(offset, offset + itemsPerPage);
+    const pageCount = Math.ceil(filteredData.length / itemsPerPage);
 
     const requestSort = (key) => {
         let direction = 'ascending';
@@ -45,7 +52,7 @@ const ConsumeEndPoint = () => {
     };
 
     const sortedData = React.useMemo(() => {
-        let sortableData = [...data];
+        let sortableData = [...filteredData];
         if (sortConfig.key !== null) {
             sortableData.sort((a, b) => {
                 if (a[sortConfig.key] < b[sortConfig.key]) {
@@ -58,7 +65,7 @@ const ConsumeEndPoint = () => {
             });
         }
         return sortableData.slice(offset, offset + itemsPerPage);
-    }, [data, sortConfig, offset, itemsPerPage]);
+    }, [filteredData, sortConfig, offset, itemsPerPage]);
 
     const getClassNamesFor = (name) => {
         if (!sortConfig) {
@@ -70,6 +77,13 @@ const ConsumeEndPoint = () => {
     return (
         <div className="container mx-auto p-4">
             <h1 className="text-2xl font-bold mb-6">Data Table</h1>
+            <input
+                type="text"
+                value={searchTerm}
+                onChange={handleSearchChange}
+                placeholder="Search by name"
+                className="mb-4 p-2 border border-gray-300 rounded w-full"
+            />
             <div className="overflow-x-auto shadow-md rounded-lg">
                 <table className="min-w-full bg-white">
                     <thead>
